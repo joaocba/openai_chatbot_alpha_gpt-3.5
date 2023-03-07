@@ -4,7 +4,7 @@ import openai
 
 
 # set openai API key
-openai.api_key = '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'
+openai.api_key = ''
 openai.organization = os.getenv("OPENAI_ORGANIZATION")
 
 # array to store conversations, also define here the role of the AI (systems, assistant, user) and its initial behavior
