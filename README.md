@@ -1,17 +1,30 @@
-## DEMO: Q&A Assistant (Native - GPT3-Turbo)
+## Chatbot AI Assistant (Native)
 
-#### Technology: OpenAi GPT AI models
+#### Technology: OpenAi
+#### Method: Completions (gpt3.5 turbo model)
 
-#### Description: Simple chatbot demo developed with Flask that features conversation with a virtual assistant. This demo uses the native conversation stream without any local or indexed context but powered by the new GPT3-Turbo model which is cheaper and faster than the other available models for chat.
+#### Description:
+Chatbot developed with Python and Flask that features conversation with a virtual assistant. This uses the native conversation stream without any local or indexed context but powered by the new GPT3.5-Turbo model which is cheaper and faster than the other available models for chat. It allows to define an initial role and personification.
 
-#### How to run (commands Windows terminal):
-- python3 -m venv venv
-- venv\Scripts\activate
-- pip install flask openai python-dotenv
-- flask run
-- Load http://localhost:5000 on browser
+### How to run (commands Windows terminal with Python 2.7):
 
+#### Part One: Prepare Environment
+- **Define necessary parameters (OpenAi API key, ...) on file 'app.py'**
+- Initialize virtual environment and install dependencies, run:
+
+	    virtualenv env
+	    env\Scripts\activate
+	    pip install flask python-dotenv
+        pip install openai
+
+#### Part Two: Run the app
+
+- Initialize the app:
+
+	    flask run
+
+- Enter "http://localhost:5000" on browser to interact with app
 
 #### Changelog
 - v0.1
-	- inital build
+	- initial build
